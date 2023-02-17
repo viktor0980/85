@@ -17,7 +17,7 @@ data.results.foreach(poke =>{
   const ul = document.querySelector("ul");
   const pokemon = document.createElement('li');
   pokemon.innerHTML = poke.name;
-  ul.appendChild(pokemon);
+  pokemon.appendChild(ul);
 
 
 });
