@@ -3,7 +3,7 @@ import "../scss/app.scss";
 window.addEventListener("DOMContentLoaded", () => {
   // This block will be executed once the page is loaded and ready
 
-
+  const ul = document.querySelector("ul");
   
 const pokemons = async () => {
 
@@ -12,12 +12,12 @@ const pokemons = async () => {
   console.log(data);
  };
  pokemons();
+
 pokemon.innerText(data.name);
-data.results.forEach(data =>{
-  const ul = document.querySelector("ul");
-  const pokemon = document.createElement("li");
+data.forEach(data =>{
+  const pokemon = document.createElement('li');
   pokemon.innerHTML = data.name;
-  pokemon.appendChild(ul);
+  ul.appendChild(pokemon);
 
 
 });
