@@ -12,11 +12,10 @@ const pokemons = async () => {
   console.log(data);
  };
  pokemons();
-const pokemon = document.createElement("li");
 pokemon.innerText(data.name);
-data.foreach(data =>{
+data.results.foreach(poke =>{
   const pokemon = document.createElement('li');
-  pokemon.innerHTML = data.name;
+  pokemon.innerHTML = poke.name;
   ul.appendChild(pokemon);
 
 
