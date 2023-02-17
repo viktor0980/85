@@ -12,8 +12,8 @@ const pokemons = async () => {
   console.log(data);
  };
  pokemons();
-const pokemon = document.createElement(li);
+const pokemon = document.createElement("li");
 pokemon.innerText(data.name);
 data.foreach(data => pokemon);
-pokemon.appendchild(ul);
+ul.appendchild(pokemon);
 });
