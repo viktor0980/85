@@ -15,5 +15,6 @@ const pokemons = async () => {
 const pokemon = document.createElement("li");
 pokemon.innerText(data.name);
 data.foreach(data => pokemon);
-ul.appendchild(pokemon);
+pokemon.appendchild(ul);
+  document.body.insertBefore(pokemon, ul);
 });
