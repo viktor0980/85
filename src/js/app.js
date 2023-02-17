@@ -12,7 +12,7 @@ const pokemons = async () => {
   console.log(data);
  };
  pokemons();
-const pokemon = document.createElement(ul);
+const pokemon = document.createElement(li);
 pokemon.innerText(data.name);
-data.foreach(data => document.createElement(ul));
+data.foreach(data => pokemon);
 });
