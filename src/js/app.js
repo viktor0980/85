@@ -13,7 +13,7 @@ const pokemons = async () => {
  };
  pokemons();
 pokemon.innerText(data.name);
-data.results.foreach(data =>{
+data.results.forEach(data =>{
   const ul = document.querySelector("ul");
   const pokemon = document.createElement("li");
   pokemon.innerHTML = data.name;
